@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Gamers - Mini Game Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.min.js"></script>
+</head>
+<body>
+    <div id="menu">
+        <h1>3D Gamers</h1>
+        <ul id="game-list"></ul>
+    </div>
+    <div id="hud">
+        <span id="fps">FPS: 0</span>
+        <button id="back-to-menu" style="display:none;">Main Menu (Esc)</button>
+    </div>
+    <div id="game-canvas-container">
+        <canvas id="game-canvas"></canvas>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

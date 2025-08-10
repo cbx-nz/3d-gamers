@@ -1,0 +1,26 @@
+{
+  "name": "3d-gamers",
+  "version": "1.0.0",
+  "description": "A browser-based 3D game framework with multiplayer support",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "3d",
+    "games",
+    "threejs",
+    "multiplayer",
+    "websocket"
+  ],
+  "author": "3D Gamers",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.13.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

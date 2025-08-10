@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #181818;
+    color: #fff;
+}
+
+#menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(30,30,30,0.95);
+    padding: 32px 48px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+#menu h1 {
+    margin-bottom: 24px;
+    font-size: 2.5em;
+    text-align: center;
+    color: #00bfff;
+}
+
+#game-list {
+    list-style: none;
+    padding: 0;
+    min-width: 300px;
+}
+
+#game-list li {
+    margin: 12px 0;
+    padding: 12px 24px;
+    background: #222;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+    border: 2px solid transparent;
+}
+
+#game-list li:hover {
+    background: #444;
+    border-color: #00bfff;
+}
+
+#hud {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 20;
+    font-size: 1.1em;
+    pointer-events: none;
+}
+
+#fps {
+    background: rgba(0,0,0,0.7);
+    padding: 4px 12px;
+    border-radius: 8px;
+    margin-right: 8px;
+    color: #00ff00;
+}
+
+#back-to-menu {
+    pointer-events: auto;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 16px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-left: 8px;
+    display: inline-block;
+    transition: background 0.2s;
+}
+
+#back-to-menu:hover {
+    background: #555;
+}
+
+#game-canvas-container {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100vw; height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#game-canvas {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background: #111;
+}
+
+.hidden {
+    display: none !important;
+}
